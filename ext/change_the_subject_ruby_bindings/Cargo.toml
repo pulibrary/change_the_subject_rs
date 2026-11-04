@@ -1,0 +1,12 @@
+[package]
+name = "change_the_subject_ruby_bindings"
+publish = false
+edition = "2024"
+
+[lib]
+name = "change_the_subject_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+magnus = "0.9"
+change_the_subject_rs = { path = "../.." }

@@ -1,1 +1,8 @@
 /target
+/ext/change_the_subject_ruby_bindings/target
+/ext/change_the_subject_ruby_bindings/Makefile
+/ext/change_the_subject_ruby_bindings/*.so
+/ext/change_the_subject_ruby_bindings/mkmf.log
+*.gem
+.byebug_history
+bench/Gemfile.lock
