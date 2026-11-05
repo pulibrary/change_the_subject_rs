@@ -5,6 +5,7 @@ edition = "2024"
 
 [lib]
 name = "change_the_subject_rs"
+# Crate type is used when compiling a dynamic library to be used in another language
 crate-type = ["cdylib"]
 
 [dependencies]

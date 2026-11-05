@@ -1,6 +1,10 @@
 use change_the_subject_rs::fix;
 use magnus::{Object, RHash, function, scan_args::get_kwargs};
 
+// To use in ruby add the following:
+// require 'change_the_subject_rs'
+// ChangeTheSubjectRS.fix(subject_terms: headings) 
+
 #[magnus::init(name = "change_the_subject_rs")]
 fn init(ruby: &magnus::Ruby) -> Result<(), magnus::Error> {
     let module = ruby.define_module("ChangeTheSubjectRS")?;

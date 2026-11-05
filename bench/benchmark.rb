@@ -1,11 +1,12 @@
-require 'marc'
-require 'change_the_subject'
 require 'byebug'
-require 'change_the_subject_rs'
 require 'benchmark/ips'
+require 'change_the_subject'
+require 'change_the_subject_rs'
 require 'erb' # required for the original change_the_subject implementation, but not declared in its gemspec
+require 'marc'
 
-RubyVM::YJIT.enable
+# YJIT is faster than standard ruby compilier 
+RubyVM::YJIT.enable 
 
 headings = File.readlines('subject-headings')
 
