@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+
+gem 'benchmark-ips'
+gem 'byebug'
+gem 'change_the_subject', github: 'pulibrary/change_the_subject'
+gem 'change_the_subject_rs', github: 'pulibrary/change_the_subject_rs', branch: 'ruby'
+gem 'marc'
